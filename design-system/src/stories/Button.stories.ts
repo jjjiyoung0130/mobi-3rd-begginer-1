@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "../components/Button";
+import { TSButton } from "../components/Button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 // 버튼 컴포넌트에 대한 메타 정보 정의 (title, component, layout, tags, argTypes)
 const meta = {
   title: "Example/Button",
-  component: Button,
+  component: TSButton,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "centered",
@@ -17,7 +17,7 @@ const meta = {
   argTypes: {
     backgroundColor: { control: "color" },
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof TSButton>;
 
 // meata 정보 내보내기
 export default meta;

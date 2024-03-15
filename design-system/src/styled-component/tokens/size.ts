@@ -12,6 +12,10 @@ export const SIZE = {
       width: "9rem",
       height: "3rem",
     },
+    square: {
+      width: "1rem",
+      height: "1rem",
+    },
   },
   box: {
     small: {

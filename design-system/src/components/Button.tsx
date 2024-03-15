@@ -8,20 +8,22 @@ import { FONT_SIZE } from "../styled-component/tokens/fontSize";
 
 interface ButtonProps {
   primary?: boolean;
-  label?: string;
+  borderRadius?: string;
   backgroundColor?: string;
-  size?: "small" | "medium" | "large";
+  color?: string;
+  size?: "small" | "medium" | "large" | "square";
   onClick?: () => void;
 }
 
-export const Button = styled.button<ButtonProps>`
+export const TSButton = styled.button<ButtonProps>`
   margin: 10px;
   border: ${BORDER.gray.thick_black_border};
-  border-radius: ${BORDER_RADIUS.round_square};
+  border-radius: ${({ borderRadius }) =>
+    borderRadius || BORDER_RADIUS.round_square};
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${COLOR.grayScale.gray_0};
+  color: ${({ color }) => color || COLOR.grayScale.gray_0};
   background-color: ${({ backgroundColor }) =>
     backgroundColor || COLOR.main.weight};
 
@@ -49,8 +51,17 @@ ${({ size }) =>
       height: ${SIZE.button.large.height};
     `}
 
+    ${({ size }) =>
+    size === "square" &&
+    css`
+      font-size: ${FONT_SIZE.sm};
+      width: ${SIZE.button.square.width};
+      height: ${SIZE.button.square.height};
+    `}
+
 
    &:hover {
-    background-color: ${COLOR.sub.light};
+    color: ${COLOR.main.weight};
+    background-color: ${COLOR.main.light};
   }
 `;
