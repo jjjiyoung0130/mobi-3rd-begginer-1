@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { BORDER_RADIUS } from "../styled-component/tokens/borderRadius";
 import { COLOR } from "../styled-component/tokens/color";
-import { BORDER } from "../styled-component/tokens/boeder";
+import { BORDER } from "../styled-component/tokens/border";
 import { FONT_SIZE } from "../styled-component/tokens/fontSize";
 import { SIZE } from "../styled-component/tokens/size";
 

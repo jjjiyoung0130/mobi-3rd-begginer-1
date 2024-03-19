@@ -1,5 +1,5 @@
 import { Button, Stack } from "@mui/material";
-import { COLOR } from "../../styled-component/tokens/color";
+import { COLOR } from "../../../styled-component/tokens/color";
 
 export const MUIButton = () => {
   return (

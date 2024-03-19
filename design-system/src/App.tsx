@@ -7,8 +7,11 @@ import { Input } from "./components/Input";
 import { COLOR } from "./styled-component/tokens/color";
 import Checkbox from "./components/CheckBox";
 import { Pagenation } from "./components/Pagenation";
-import { MUIButton } from "./components/MUI/Button";
-import { MUIAutoComplete } from "./components/MUI/Autocomplete";
+import { MUIButton } from "./components/libs/MUI/Button";
+import { MUIAutoComplete } from "./components/libs/MUI/Autocomplete";
+import { MUICheckbox } from "./components/libs/MUI/Checkbox";
+import { CHAKRAButton } from "./components/libs/CHAKRA/Button";
+import { CHAKRAInput } from "./components/libs/CHAKRA/Input";
 
 function App() {
   const [isChecked, setIsChecked] = useState(false);
@@ -74,6 +77,10 @@ function App() {
       />
       <MUIButton />
       <MUIAutoComplete />
+      <MUICheckbox />
+
+      <CHAKRAButton />
+      <CHAKRAInput />
     </>
   );
 }

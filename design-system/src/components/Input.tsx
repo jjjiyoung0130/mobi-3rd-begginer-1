@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { COLOR } from "../styled-component/tokens/color";
 import { FONT_SIZE } from "../styled-component/tokens/fontSize";
-import { BORDER } from "../styled-component/tokens/boeder";
+import { BORDER } from "../styled-component/tokens/border";
 import { BORDER_RADIUS } from "../styled-component/tokens/borderRadius";
 interface InputProps {
   width?: string;
